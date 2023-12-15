@@ -14,7 +14,7 @@ variable "parameters" {
     { name = "prod.expense.frontend.backend_url", value = "http://backend-prod.waleapagun.online/", type = "String" },
     { name = "prod.rds.endpoint", value = "prod-mysql.cluster-c3rf7skzcvc3.us-east-1.rds.amazonaws.com", type = "String" },
     { name = "prod.backend.app_version", value = "1.0.0", type = "String" },
-    { name = "prod.frontend.app_version", value = "1.0.0", type = "String" },
+    { name = "prod.frontend.app_version", value = "1.0.1", type = "String" },
 
     ##Dev env
     { name = "dev.expense.frontend.backend_url", value = "http://backend-dev.waleapagun.online/", type = "String" },

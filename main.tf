@@ -27,11 +27,11 @@ variable "parameters" {
     { name = "ssh_password", value = "DevOps321", type = "SecureString" }
 
     ## RoboShop Dev Env Parameters
-    { name = "dev.roboshop.frontend.catalogue_url", value = "http://catalogue-dev.waleapagun.online:80/", type = "String" },
-    { name = "dev.roboshop.frontend.cart_url", value = "http://cart-dev.waleapagun.online:80/", type = "String" },
-    { name = "dev.roboshop.frontend.user_url", value = "http://user-dev.waleapagun.online:80/", type = "String" },
-    { name = "dev.roboshop.frontend.shipping_url", value = "http://shipping-dev.waleapagun.online:80/", type = "String" },
-    { name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.waleapagun.online:80/", type = "String" },
+    { name = "dev.roboshop.frontend.catalogue_url", value = "http://catalogue-dev.waleapagun.online:8080/", type = "String" },
+    { name = "dev.roboshop.frontend.cart_url", value = "http://cart-dev.waleapagun.online:8080/", type = "String" },
+    { name = "dev.roboshop.frontend.user_url", value = "http://user-dev.waleapagun.online:8080/", type = "String" },
+    { name = "dev.roboshop.frontend.shipping_url", value = "http://shipping-dev.waleapagun.online:8080/", type = "String" },
+    { name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.waleapagun.online:8080/", type = "String" },
   ]
 }
 

@@ -24,7 +24,7 @@ variable "parameters" {
     { name = "artifactory_username", value = "admin", type = "String" },
     { name = "artifactory_password", value = "Admin123", type = "String" },
     { name = "ssh_username", value = "centos", type = "String" },
-    { name = "ssh_password", value = "DevOps321", type = "SecureString" }
+    { name = "ssh_password", value = "DevOps321", type = "SecureString" },
 
     ## RoboShop Dev Env Parameters
     { name = "dev.roboshop.frontend.catalogue_url", value = "http://catalogue-dev.waleapagun.online:8080/", type = "String" },

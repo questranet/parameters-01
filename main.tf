@@ -32,6 +32,7 @@ variable "parameters" {
     { name = "dev.roboshop.frontend.user_url", value = "http://user-dev.waleapagun.online:8080/", type = "String" },
     { name = "dev.roboshop.frontend.shipping_url", value = "http://shipping-dev.waleapagun.online:8080/", type = "String" },
     { name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.waleapagun.online:8080/", type = "String" },
+    { name = "dev.roboshop.catalogue.MONGO_URL", value = "mongodb://mongodb-dev.waleapagun.online:27017/catalogue", type = "String" },
   ]
 }
 

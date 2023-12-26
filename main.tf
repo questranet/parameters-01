@@ -35,7 +35,10 @@ variable "parameters" {
     { name = "dev.roboshop.catalogue.MONGO_URL", value = "mongodb://mongodb-dev.waleapagun.online:27017/catalogue", type = "String" },
     { name = "dev.roboshop.catalogue.MONGO_ENDPOINT", value = "mongodb://mongodb-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.catalogue.MONGO_URL", value = "mongodb://mongodb-dev.waleapagun.online:27017/users", type = "String" },
-    { name = "dev.roboshop.catalogue.REDIS_HOST", value = "mongodb://redis-dev.waleapagun.online", type = "String" },
+    { name = "dev.roboshop.catalogue.REDIS_HOST", value = "redis-dev.waleapagun.online", type = "String" },
+    { name = "dev.roboshop.cart.REDIS_HOST", value = "redis-dev.waleapagun.online", type = "String" },
+    { name = "dev.roboshop.cart.CATALOGUE_HOST", value = "catalogue-dev.waleapagun.online", type = "String" },
+    { name = "dev.roboshop.cart.CATALOGUE_PORT", value = "8080", type = "String" },
 
   ]
 }

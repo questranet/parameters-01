@@ -17,7 +17,7 @@ variable "parameters" {
 #    { name = "prod.frontend.app_version", value = "1.0.1", type = "String" },
 
     ##Dev env
-    { name = "dev.expense.frontend.backend_url", value = "http://backend-dev.waleapagun.online/", type = "String" },
+#    { name = "dev.expense.frontend.backend_url", value = "http://backend-dev.waleapagun.online/", type = "String" },
 
     ## Common env
     { name = "jenkins_password", value = "6cd663cd072c466aa2499bb9a25f0654", type = "String" },

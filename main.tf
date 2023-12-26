@@ -26,6 +26,7 @@ variable "parameters" {
     { name = "ssh_username", value = "centos", type = "String" },
     { name = "ssh_password", value = "DevOps321", type = "SecureString" },
 
+
     ## RoboShop Dev Env Parameters
     { name = "dev.roboshop.frontend.catalogue_url", value = "http://catalogue-dev.waleapagun.online:8080/", type = "String" },
     { name = "dev.roboshop.frontend.cart_url", value = "http://cart-dev.waleapagun.online:8080/", type = "String" },
@@ -57,8 +58,8 @@ variable "parameters" {
     { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
     { name = "dev.roboshop.shipping.DB_PASS", value = "RoboShop@1", type = "SecureString" },
     { name = "dev.roboshop.rabbitmq.MQ_PASS", value = "roboshop123", type = "SecureString" },
-    { name = "dev.roboshop.payment.AMPQ_PASS", value = "roboshop123", type = "SecureString" },
-    { name = "dev.roboshop.dispatch.AMPQ_PASS", value = "roboshop123", type = "SecureString" },
+    { name = "dev.roboshop.payment.AMQP_PASS", value = "roboshop123", type = "SecureString" },
+    { name = "dev.roboshop.dispatch.AMQP_PASS", value = "roboshop123", type = "SecureString" },
 
   ]
 }

@@ -44,6 +44,16 @@ variable "parameters" {
     { name = "dev.roboshop.shipping.CART_ENDPOINT", value = "cart-dev.waleapagun.online:8080", type = "String" },
 
 
+    { name = "dev.roboshop.payment.CART_HOST", value = "cart-dev.waleapagun.online:8080", type = "String" },
+    { name = "dev.roboshop.payment.CART_PORT", value = "8080", type = "String" },
+    { name = "dev.roboshop.payment.USER_HOST", value = "user-dev.waleapagun.online:8080", type = "String" },
+    { name = "dev.roboshop.payment.USER_PORT", value = "8080", type = "String" },
+    { name = "dev.roboshop.payment.AMQP_HOST", value = "rabbitmq-dev.waleapagun.online", type = "String" },
+    { name = "dev.roboshop.payment.AMQP_USER", value = "roboshop", type = "String" },
+    { name = "dev.roboshop.dispatch.AMQP_HOST", value = "rabbitmq-dev.waleapagun.online", type = "String" },
+    { name = "dev.roboshop.dispatch.AMQP_USER", value = "roboshop", type = "String" },
+
+
 
     ##password
     { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },

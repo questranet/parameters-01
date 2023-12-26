@@ -40,6 +40,11 @@ variable "parameters" {
     { name = "dev.roboshop.cart.CATALOGUE_HOST", value = "catalogue-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.cart.CATALOGUE_PORT", value = "8080", type = "String" },
 
+
+
+    ##password
+    { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
+
   ]
 }
 

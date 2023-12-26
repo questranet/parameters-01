@@ -39,11 +39,14 @@ variable "parameters" {
     { name = "dev.roboshop.cart.REDIS_HOST", value = "redis-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.cart.CATALOGUE_HOST", value = "catalogue-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.cart.CATALOGUE_PORT", value = "8080", type = "String" },
+    { name = "dev.roboshop.shipping.DB_HOST", value = "mysql-dev.waleapagun.online", type = "String" },
+    { name = "dev.roboshop.shipping.DB_USER", value = "root", type = "String" },
 
 
 
     ##password
     { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
+    { name = "dev.roboshop.shipping.DB_PASS", value = "RoboShop@1", type = "SecureString" },
 
   ]
 }

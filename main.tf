@@ -42,7 +42,7 @@ variable "parameters" {
     { name = "dev.roboshop.cart.CATALOGUE_PORT", value = "8080", type = "String" },
     { name = "dev.roboshop.shipping.DB_HOST", value = "mysql-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.shipping.DB_USER", value = "root", type = "String" },
-    { name = "dev.roboshop.shipping.CART_ENDPOINT", value = "cart-dev.waleapagun.online:8080", type = "String" },
+    { name = "dev.roboshop.shipping.CART_ENDPOINT", value = "cart-dev.waleapagun.online:80", type = "String" },
     { name = "dev.roboshop.payment.CART_HOST", value = "cart-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.payment.CART_PORT", value = "8080", type = "String" },
     { name = "dev.roboshop.payment.USER_HOST", value = "user-dev.waleapagun.online", type = "String" },

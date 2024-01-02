@@ -64,6 +64,6 @@ variable "parameters" {
     { name = "dev.roboshop.docdb.master_username", value = "docdbadmin", type = "String" },
     { name = "dev.roboshop.docdb.master_password", value = "roboshop1234", type = "SecureString" },
   ]
-/
+
 }
 ## Note: Ideally we don't keep passwords in GIT REPOS, Those will be created manually. Secret management of creating secrets is most of the time is manual

@@ -52,6 +52,11 @@ variable "parameters" {
     { name = "dev.roboshop.dispatch.AMQP_HOST", value = "rabbitmq-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.dispatch.AMQP_USER", value = "roboshop", type = "String" },
 
+    ## DB Endpoints
+    { name = "dev.roboshop.docdb.endpoint", value = "dev-docdb-cluster.cluster-c3rf7skzcvc3.us-east-1.docdb.amazonaws.com", type = "String" },
+    { name = "dev.roboshop.rds.endpoint", value = "dev-mysql.cluster-c3rf7skzcvc3.us-east-1.rds.amazonaws.com", type = "String" },
+
+
     ##password
     { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
     { name = "dev.roboshop.shipping.DB_PASS", value = "RoboShop@1", type = "SecureString" },

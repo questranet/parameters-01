@@ -28,11 +28,11 @@ variable "parameters" {
 
 
     ## RoboShop Dev Env Parameters
-    { name = "dev.roboshop.frontend.catalogue_url", value = "http://catalogue-dev.waleapagun.online:8080/", type = "String" },
-    { name = "dev.roboshop.frontend.cart_url", value = "http://cart-dev.waleapagun.online:8080/", type = "String" },
-    { name = "dev.roboshop.frontend.user_url", value = "http://user-dev.waleapagun.online:8080/", type = "String" },
-    { name = "dev.roboshop.frontend.shipping_url", value = "http://shipping-dev.waleapagun.online:8080/", type = "String" },
-    { name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.waleapagun.online:8080/", type = "String" },
+    { name = "dev.roboshop.frontend.catalogue_url", value = "http://catalogue-dev.waleapagun.online:80/", type = "String" },
+    { name = "dev.roboshop.frontend.cart_url", value = "http://cart-dev.waleapagun.online:80/", type = "String" },
+    { name = "dev.roboshop.frontend.user_url", value = "http://user-dev.waleapagun.online:80/", type = "String" },
+    { name = "dev.roboshop.frontend.shipping_url", value = "http://shipping-dev.waleapagun.online:80/", type = "String" },
+    { name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.waleapagun.online:80/", type = "String" },
     { name = "dev.roboshop.catalogue.MONGO_URL", value = "mongodb://docdbadmin:RoboShop1234@dev-docdb-cluster.cluster-c3rf7skzcvc3.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "String" },
     { name = "dev.roboshop.catalogue.MONGO_ENDPOINT", value = "mongodb-dev.waleapagun.online", type = "String" },
     { name = "dev.roboshop.user.MONGO_URL", value = "mongodb://mongodb-dev.waleapagun.online:27017/users", type = "String" },

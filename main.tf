@@ -56,7 +56,6 @@ variable "parameters" {
     { name = "dev.roboshop.docdb.endpoint", value = "dev-docdb-cluster.cluster-c3rf7skzcvc3.us-east-1.docdb.amazonaws.com", type = "String" },
     { name = "dev.roboshop.rds.endpoint", value = "dev-mysql.cluster-c3rf7skzcvc3.us-east-1.rds.amazonaws.com", type = "String" },
 
-
     ##password
     { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
     { name = "dev.roboshop.shipping.DB_PASS", value = "RoboShop@1", type = "SecureString" },
@@ -68,6 +67,48 @@ variable "parameters" {
     { name = "dev.roboshop.rds.master_password", value = "roboshop1234", type = "SecureString" },
     { name = "dev.roboshop.docdb.master_username", value = "docdbadmin", type = "String" },
     { name = "dev.roboshop.docdb.master_password", value = "roboshop1234", type = "SecureString" },
+
+    ## RoboShop Prod Env Parameters
+    { name = "prod.roboshop.frontend.catalogue_url", value = "http://catalogue-prod.waleapagun.online:80/", type = "String" },
+    { name = "prod.roboshop.frontend.cart_url", value = "http://cart-prod.waleapagun.online:80/", type = "String" },
+    { name = "prod.roboshop.frontend.user_url", value = "http://user-prod.waleapagun.online:80/", type = "String" },
+    { name = "prod.roboshop.frontend.shipping_url", value = "http://shipping-prod.waleapagun.online:80/", type = "String" },
+    { name = "prod.roboshop.frontend.payment_url", value = "http://payment-prod.waleapagun.online:80/", type = "String" },
+    { name = "prod.roboshop.catalogue.MONGO_URL", value = "mongodb://docdbadmin:RoboShop1234@prod-docdb-cluster.cluster-c3rf7skzcvc3.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "String" },
+    { name = "prod.roboshop.catalogue.MONGO_ENDPOINT", value = "mongodb-prod.waleapagun.online", type = "String" },
+    { name = "prod.roboshop.user.MONGO_URL", value = "mongodb://docdbadmin:RoboShop1234@prod-docdb-cluster.cluster-c3rf7skzcvc3.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "String" },
+    { name = "prod.roboshop.user.REDIS_HOST", value = "prod-elasticache-cluster.ngpfhi.0001.use1.cache.amazonaws.com", type = "String" },
+    { name = "prod.roboshop.cart.REDIS_HOST", value = "prod-elasticache-cluster.ngpfhi.0001.use1.cache.amazonaws.com", type = "String" },
+    { name = "prod.roboshop.cart.CATALOGUE_HOST", value = "catalogue-prod.waleapagun.online", type = "String" },
+    { name = "prod.roboshop.cart.CATALOGUE_PORT", value = "80", type = "String" },
+    { name = "prod.roboshop.shipping.DB_HOST", value = "mysql-prod.waleapagun.online", type = "String" },
+    { name = "prod.roboshop.shipping.DB_USER", value = "root", type = "String" },
+    { name = "prod.roboshop.shipping.CART_ENDPOINT", value = "cart-prod.waleapagun.online:80", type = "String" },
+    { name = "prod.roboshop.payment.CART_HOST", value = "cart-prod.waleapagun.online", type = "String" },
+    { name = "prod.roboshop.payment.CART_PORT", value = "80", type = "String" },
+    { name = "prod.roboshop.payment.USER_HOST", value = "user-prod.waleapagun.online", type = "String" },
+    { name = "prod.roboshop.payment.USER_PORT", value = "80", type = "String" },
+    { name = "prod.roboshop.payment.AMQP_HOST", value = "rabbitmq-prod.waleapagun.online", type = "String" },
+    { name = "prod.roboshop.payment.AMQP_USER", value = "roboshop", type = "String" },
+    { name = "prod.roboshop.dispatch.AMQP_HOST", value = "rabbitmq-prod.waleapagun.online", type = "String" },
+    { name = "prod.roboshop.dispatch.AMQP_USER", value = "roboshop", type = "String" },
+
+    ## DB Endpoints
+    { name = "prod.roboshop.docdb.endpoint", value = "prod-docdb-cluster.cluster-c3rf7skzcvc3.us-east-1.docdb.amazonaws.com", type = "String" },
+    { name = "prod.roboshop.rds.endpoint", value = "prod-mysql.cluster-c3rf7skzcvc3.us-east-1.rds.amazonaws.com", type = "String" },
+
+    ##password
+    { name = "prod.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
+    { name = "prod.roboshop.shipping.DB_PASS", value = "RoboShop@1", type = "SecureString" },
+    { name = "prod.roboshop.rabbitmq.MQ_PASS", value = "roboshop123", type = "SecureString" },
+    { name = "prod.roboshop.payment.AMQP_PASS", value = "roboshop123", type = "SecureString" },
+    { name = "prod.roboshop.dispatch.AMQP_PASS", value = "roboshop123", type = "SecureString" },
+
+    { name = "prod.roboshop.rds.master_username", value = "mysqlrdsadmin", type = "String" },
+    { name = "prod.roboshop.rds.master_password", value = "roboshop1234", type = "SecureString" },
+    { name = "prod.roboshop.docdb.master_username", value = "docdbadmin", type = "String" },
+    { name = "prod.roboshop.docdb.master_password", value = "roboshop1234", type = "SecureString" },
+
   ]
 
 }
